@@ -1,0 +1,52 @@
+.site-header {
+  background-image: url('images/navbar_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.site-header::before {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.site-header h1,
+.site-header nav {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header h1 {
+   color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.site-header nav a {
+  color: #3417b3;
+  margin: 0 1rem;
+  text-decoration: underline;
+}
+
+.nav-list {
+  list-style: none;           /* remove bullets */
+  margin: 0;                  /* remove default margins */
+  padding: 0;                 /* remove default padding */
+  display: flex;              /* lay items out in a row */
+  justify-content: center;    /* center items horizontally */
+  align-items: center;        /* align items vertically within the header */
+}
+
+.nav-list li {
+  margin: 0 1rem;             /* horizontal gap between links */
+}
+
+.nav-list a {
+  text-decoration: none;      /* clean link appearance */
+  display: block;             /* expand clickable area */
+  padding: 0.5rem 0;          /* comfortable hit-area */
+}
