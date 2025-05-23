@@ -19,15 +19,17 @@
   <meta property="og:url" content="https://www.kiskispeedwash.com/">
   <meta property="og:title" content="Kiski Speed Wash | Leechburg Laundromat">
   <meta property="og:description" content="Industrial-sized machines, on-site soap and quarter machines. Comfortable seating area. Open daily.">
-  <meta property="og:image" content="https://www.kiskispeedwash.com/images/navbar_background.jpg">
+  <meta property="og:image" content=".../navbar_background.webp">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Kiski Speed Wash",
-      "image": "https://www.kiskispeedwash.com/images/navbar_background.jpg",
+      "image": "https://www.kiskispeedwash.com/images/relevant-business-photo.webp",
       "@id": "https://www.kiskispeedwash.com/",
       "url": "https://www.kiskispeedwash.com/",
       "telephone": "+1-412-444-9307",
@@ -39,18 +41,6 @@
         "postalCode": "15656",
         "addressCountry": "US"
       },
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Where is Kiski Speed Wash located?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We're at 105 Market St in Leechburg, PA."
-          }
-        }
-      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -65,8 +55,23 @@
         "latitude": 40.627242265884554,
         "longitude": -79.60737347604088
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is Kiski Speed Wash located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're at 105 Market St in Leechburg, PA."
+          }
+        }
+      ]
     }
-  </script>
+  ]
+}
+</script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
